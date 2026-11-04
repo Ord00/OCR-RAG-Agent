@@ -1,11 +1,11 @@
 # OCR-RAG-Agent
 AI-Agent for generating answers based on video subtitles
 
-Collaborators and their responsibilities:
+# Collaborators and their responsibilities:
 - Simonov I.A. - OCR + DBs + orchestration
 - Ulyanov L.V. - Service + RAG-agent + vectorization
 
-Technology stack:
+# Technology stack:
 - Docker
 - Python
 - LangChain
@@ -15,5 +15,5 @@ Technology stack:
 - Redis
 - EasyOCR
 
-Schema:
+# Schema:
 <img width="1482" height="644" alt="image" src="https://github.com/user-attachments/assets/7d16f446-be98-4696-8003-829df74acbee" />
