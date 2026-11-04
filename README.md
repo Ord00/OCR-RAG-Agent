@@ -2,8 +2,9 @@
 AI-Agent for generating answers based on video subtitles
 
 Collaborators and their responsibilities:
-Simonov I.A. - OCR + DBs + orchestration
-Ulyanov L.V. - Service + RAG-agent + vectorization
+- Simonov I.A. - OCR + DBs + orchestration
+- Ulyanov L.V. - Service + RAG-agent + vectorization
+
 Technology stack:
 - Docker
 - Python
