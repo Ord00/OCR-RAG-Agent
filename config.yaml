@@ -1,0 +1,6 @@
+database:
+  host: ${DB_HOST:-localhost}
+  port: ${DB_PORT:-19530}
+cache:
+  host: ${CACHE_HOST:-localhost}
+  port: ${CACHE_PORT:-6379}
