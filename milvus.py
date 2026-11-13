@@ -15,8 +15,8 @@ class VideoVectorStore:
         self,
         user_id: int,
         embeddings: HuggingFaceEmbeddings,
-        host: str = "standalone",
-        port: str = "19530",
+        host: str,
+        port: str
     ):
         self.user_id = user_id
         self.collection_name = f"video_chunks_{user_id}"

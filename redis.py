@@ -2,7 +2,7 @@ import redis.asyncio as aioredis
 import hashlib
 import json
 import logging
-from typing import Optional, Any
+from typing import Optional, Any, List, Dict
 
 logger = logging.getLogger(__name__)
 
@@ -10,10 +10,13 @@ logger = logging.getLogger(__name__)
 class VideoCache:
     """Обёртка над Redis для дедупликации обработанных видео"""
 
-    def __init__(self, host: str = "redis", port: int = 6379, ttl_days: int = 7):
-        self.client = aioredis.Redis(
-            host=host, port=port, decode_responses=True
-        )
+    def __init__(
+        self,
+        host: str,
+        port: int,
+        ttl_days: int = 7
+    ):
+        self.client = aioredis.Redis(host=host, port=port, decode_responses=True)
         self.ttl_seconds = ttl_days * 86400
 
     async def get_cached_chunks(self, video_bytes: bytes) -> Optional[list[dict[str, Any]]]:
