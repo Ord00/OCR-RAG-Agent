@@ -1,3 +1,5 @@
+# Работа с OCR
+
 import cv2
 import easyocr
 import hashlib
