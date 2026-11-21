@@ -1,3 +1,5 @@
+# Работа с основной БД
+
 from langchain_milvus import Milvus
 from langchain_milvus.function import BM25BuiltInFunction
 from langchain_huggingface import HuggingFaceEmbeddings
