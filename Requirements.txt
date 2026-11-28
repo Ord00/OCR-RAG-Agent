@@ -1,0 +1,8 @@
+langchain>=1.0
+langchain-core
+langchain-chroma
+langchain-huggingface
+langchain-ollama
+sentence-transformers
+fastapi
+uvicorn[standard]
